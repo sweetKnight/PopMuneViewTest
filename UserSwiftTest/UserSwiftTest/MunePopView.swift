@@ -103,6 +103,7 @@ class MunePopView: UIView {
             if currentCount == i {
                 isBig = false
             }
+            currentCount = -100
         }
         
     }
