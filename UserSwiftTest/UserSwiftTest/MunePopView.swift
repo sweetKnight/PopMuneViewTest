@@ -96,14 +96,16 @@ class MunePopView: UIView {
                     opintView.transform = CGAffineTransformScale(opintView.transform, 1.2, 1.3)
                     isBig = true
                     currentCount = i
+                    print(currentCount)
                 }
                 return
             }
             opintView.transform = CGAffineTransformIdentity
             if currentCount == i {
                 isBig = false
+                currentCount = -100
             }
-            currentCount = -100
+            
         }
         
     }
